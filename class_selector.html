@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class selector</title>
+	<style type="text/css">
+		/*CSS类选择器的命名规则, 1.不能用数字开头; 2.不能用特殊字符开头(_除外);*/
+		.box{
+			font-size: 40px;
+			color: #ff0000;
+			width: 400px;
+			height: 300px;
+			background-color: #090909;
+		}
+		.miss{
+			text-indent: 2em;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<!-- HTML的一个标签可以调用多个CSS的类选择器 -->
+	<div class="box miss">这是div标签1</div>
+	<div>这是div标签2</div>
+	<p>这是p标签1</p>
+	<!-- 同一个CSS类选择器可以同时被多个不同的HTML标签调用 -->
+	<p class="box">这是p标签2</p>
+	<span class="box">这是span标签1</span>
+	<h1>这是h1标签1</h1>
+</body>
+</html>

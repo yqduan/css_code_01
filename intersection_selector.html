@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>intersection selector</title>
+	<style type="text/css">
+		.box{
+			font-size: 50px;	
+		}
+		#miss{
+			color: blue;
+		}
+
+		/*CSS交集选择器之标签选择器+类选择器*/
+		div.box{
+			color: red;
+		}
+
+		/*CSS交集选择器之标签选择器+ID选择器*/
+		div#miss{
+			width: 400px;
+			height: 300px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">这是div标签1</div>
+	<p class="box">这是p标签1</p>
+	<div id="miss">这是div标签2</div>
+</body>
+</html>
